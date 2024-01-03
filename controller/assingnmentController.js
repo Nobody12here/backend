@@ -29,7 +29,7 @@ async function viewAll(req, res) {
             console.log("No assignments present")
             res.status(404).json({ Error: "No assignments present" })
         }
-    }
+    } 
     catch (error) {
         console.log(error);
         res.status(401).json({ Error: error })
